@@ -28,7 +28,8 @@
     "react-dom": ">=16.8.0",
     "typescript": ">=3.7.2"
   },
-  "devDependencies": {
-    "rimraf": "^3.0.2"
+  "dependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
   }
 }

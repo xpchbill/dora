@@ -5,7 +5,7 @@ import React, { useEffect } from 'react';
 
 import logo from './logo.svg';
 
-const App = () => {
+const App: React.FC = () => {
   useEffect(() => {
     console.log('Testing monorepo!');
   }, []);
@@ -14,7 +14,7 @@ const App = () => {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Header a="3234">
+        <Header a="123">
           React , Typescript, Yarn & Lerna Monorepo
         </Header>
         <p>
@@ -28,10 +28,10 @@ const App = () => {
           rel="noopener noreferrer"
         >
           Get more info on Create React App
-      </a>
+        </a>
       </header>
     </div>
   );
-}
+};
 
 export default App;

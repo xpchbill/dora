@@ -5,8 +5,6 @@ interface HeaderProps {
   children?: React.ReactNode;
 }
 
-export const Header: React.SFC<HeaderProps> = ({ children }: HeaderProps) => {
-  return <h2>{children}</h2>;
-};
+export const Header: React.SFC<HeaderProps> = ({ children }: HeaderProps) => <h2>{children}</h2>;
 
 export default Header;

@@ -5,8 +5,6 @@ interface ButtonProps {
   children?: React.ReactNode;
 }
 
-export const Button: React.SFC<ButtonProps> = ({ children }: ButtonProps) => {
-  return <h2>{children}</h2>;
-};
+export const Button: React.SFC<ButtonProps> = ({ children }: ButtonProps) => <h2>{children}</h2>;
 
 export default Button;

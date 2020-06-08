@@ -11,7 +11,7 @@
     "test": "node scripts/test.js",
     "typecheck": "tsc -p tsconfig.json",
     "lint": "eslint . --ignore-path ../../.eslintignore --ext ts --ext tsx --ext js --ext jsx",
-    "lint:fix": "eslint --fix . --ignore-path ../../.eslintignore --ext ts --ext tsx --ext js --ext jsx"
+    "lint:fix": "eslint --fix ./src --ignore-path ../../.eslintignore --ext ts --ext tsx --ext js --ext jsx"
   },
   "peerDependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -38,7 +38,6 @@
     "less-loader": "^6.1.0",
     "lodash.clonedeep": "^4.5.0",
     "lodash.get": "^4.4.2",
-    "rimraf": "^3.0.2",
     "source-map-loader": "^1.0.0",
     "webpackbar": "^4.0.0"
   },
@@ -93,8 +92,10 @@
     "postcss-normalize": "8.0.1",
     "postcss-preset-env": "6.7.0",
     "postcss-safe-parser": "4.0.1",
+    "react": "^16.13.1",
     "react-app-polyfill": "^1.0.6",
     "react-dev-utils": "^10.2.0",
+    "react-dom": "^16.13.1",
     "resolve": "1.15.0",
     "resolve-url-loader": "3.1.1",
     "sass-loader": "8.0.2",
