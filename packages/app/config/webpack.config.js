@@ -323,7 +323,14 @@ module.exports = function(webpackEnv) {
       rules: [
         // Disable require.ensure as it's not a standard language feature.
         { parser: { requireEnsure: false } },
-
+        {
+          enforce: 'pre',
+          // include: [paths.componentsPackage],
+          // exclude: /node_modules/,
+          // exclude: /@babel(?:\/|\\{1,2})runtime/,
+          test: /\.(js|jsx|ts|tsx|less)$/,
+          use: 'source-map-loader',
+        },
         // First, run the linter.
         // It's important to do this before Babel processes the JS.
         {
