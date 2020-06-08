@@ -37,6 +37,7 @@
     "@typescript-eslint/camelcase": "off",
     "react/jsx-filename-extension": "off",
     "simple-import-sort/sort": "warn",
+    "import/prefer-default-export": 0,
     "import/no-unresolved": 0, // [2, { commonjs: true, amd: true }],
     "no-console": "off",
     "sort-keys": "off",

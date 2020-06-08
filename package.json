@@ -14,6 +14,7 @@
     "lint:fix": "lerna run lint:fix --parallel",
     "start:app": "lerna run start --scope=\"@dora/app\" --parallel",
     "build:app": "lerna run build --scope=\"@dora/app\" --parallel",
+    "build:ui": "lerna run build  --scope=\"@dora/ui\" --parallel",
     "test:app": "CI=true lerna run test --scope=\"@dora/app\" --parallel",
     "lint:app": "lerna run lint --scope=\"@dora/app\" --parallel",
     "lint:fix:app": "lerna run lint:fix --scope=\"@dora/app\" --parallel",
