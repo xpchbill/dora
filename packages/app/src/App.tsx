@@ -1,6 +1,6 @@
-import './App.scss';
+import './App.less';
 
-import { Header } from '@dora/ui';
+import { Header } from '@dora/components';
 import React, { useEffect } from 'react';
 
 import logo from './logo.svg';

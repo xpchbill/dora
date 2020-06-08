@@ -7,8 +7,9 @@
   },
   "scripts": {
     "start": "rescripts start",
-    "build": "rescripts build",
+    "build": "rimraf ./build && rescripts build",
     "test": "rescripts test",
+    "eject": "react-scripts eject",
     "typecheck": "tsc -p tsconfig.json",
     "lint": "eslint . --ignore-path ../../.eslintignore --ext ts --ext tsx --ext js --ext jsx",
     "lint:fix": "eslint --fix . --ignore-path ../../.eslintignore --ext ts --ext tsx --ext js --ext jsx"
@@ -34,9 +35,10 @@
     "typescript": ">=3.7.2"
   },
   "devDependencies": {
-    "@dora/ui": "^1.0.2",
+    "@dora/components": "^1.0.2",
     "@rescripts/cli": "^0.0.14",
     "@rescripts/utilities": "^0.0.7",
+    "less-loader": "^6.1.0",
     "lodash.clonedeep": "^4.5.0",
     "lodash.get": "^4.4.2",
     "rimraf": "^3.0.2",

@@ -36,7 +36,29 @@ module.exports = config => {
         use: 'source-map-loader',
     };
     const newRules = cloneDeep(rules);
-    newRules.splice(1, 0, sourceMapLoader)
+    newRules.splice(1, 0, sourceMapLoader);
+    // newRules.push(
+    //     {
+    //         test: /\.less$/,
+    //         use: [
+    //             {
+    //               loader: 'style-loader',
+    //             },
+    //             {
+    //               loader: 'css-loader',
+    //             },
+    //             {
+    //               loader: 'less-loader',
+    //               options: {
+    //                 lessOptions: {
+    //                   strictMath: true,
+    //                 },
+    //               },
+    //             }
+    //         ]
+    //     }
+    // );
+
     const newConfig = {
         ...config,
         plugins: [...config.plugins, new WebpackBar({
