@@ -53,7 +53,8 @@
   },
   "lint-staged": {
     "packages/**/*.{js,jsx,ts,tsx}": [
-      "eslint"
+      "prettier --write",
+      "eslint --ignore-path .eslintignore"
     ]
   },
   "workspaces": {
