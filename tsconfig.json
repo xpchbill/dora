@@ -1,25 +1,33 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
+    "module": "esnext",
+    "lib": ["dom", "esnext"],
+    "declaration": true,
+    "sourceMap": true,
+    "importHelpers": true,
+    "moduleResolution": "node",
     "skipLibCheck": true,
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noImplicitAny": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "jsx": "react",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "preserve"
+    "allowJs": true,
+    "preserveSymlinks": true,
+    "outDir": "dist/esm"
   },
-  "include": [
-    "packages/*/src"
+  "include": ["types"],
+  "exclude": [
+    "node_modules",
+    "node_modules/@theme-ui",
+    "**/*.test.js",
+    "**/*.test.ts",
+    "**/*.test.tsx"
   ]
 }

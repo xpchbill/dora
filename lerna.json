@@ -1,6 +1,8 @@
 {
   "packages": [
-    "packages/*"
+    "packages/app",
+    "packages/mock-api",
+    "packages/ui/*"
   ],
   "version": "1.0.2",
   "npmClient": "yarn",

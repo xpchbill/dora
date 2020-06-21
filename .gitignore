@@ -7,8 +7,10 @@
 # production
 **/build/**
 **/dist/**
+**/.release/**
 
 # misc
+.vscode
 .DS_Store
 .env.local
 .env.development.local
